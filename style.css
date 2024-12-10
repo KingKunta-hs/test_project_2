@@ -1,70 +1,41 @@
- body, html {
-  background-color: black;
-  } 
-  
-  * {
-    box-sizing: border-box;
-    /* background-image: linear-gradient(black, rgb(87, 7, 7)); */
-  }
-  
-.wrapper {
-    display: grid;
-    /* background-image: url("440654895_3523d9e353-1024x547.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;  */
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 470px 1fr 2fr 1fr;
-    border-radius: 10px;
-
-}
-
-h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(27, 7, 7);
-    margin: 8px;
-    font-style: italic;
-    font-size: 80px;
-    font-variant: small-caps;
+body {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    
-    
-
 }
 
-.box1, .box2, .box3 {
-    border: 3px transparent slategray;
-    margin: 17px;
-    padding: 10px;
-    gap: 10px;
-    border-radius: 10px;
-    opacity: 0.5;
-    background-image: linear-gradient(black, rgb(102, 25, 25));
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#board {
+    height: 540px;
+    width: 630px;
     
+    background-color: blue;
+    border: 10px solid navy;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.bg-image {
-  background-image: url(300-movie-zlmhtklwy8npp55p.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
 
-  
+    /*/ ik had eerst 90 px bij height en widht maar omdat het niet klopte kwa berekening had ik het 
+2 keer aangepast van 90, 80 en 70 want de laaste rij balletjes kwam onder de container./*/
+   
+background-color: white;
+    border-radius: 50%;
+    border: 5px solid navy;
 }
 
-.box4, .box5, .box6 {
-  margin: 17px;
-  font: 1em sans-serif;
-  padding: 10px;
-  gap: 10px;
-  border-radius: 10px;
-  background-image: linear-gradient(black, rgb(102, 25, 25));
-  color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.red-piece {
+    background-color: red;
+}
+
+.yellow-piece {
+    background-color: yellow;
+}
+
+* {
+    background-color: whitesmoke ;
 }
